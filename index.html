@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <h1>Exemplos de Formulário em HTML</h1>
+    <h2>Exemplo 1</h2>
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="e-mail" name="email" placeholder="E-mail">
+        <input type="date" name="nascimento">
+        <input type="tel" name="telefone" placeholder="Celular">
+        <input type="password" name="senha" placeholder="Senha">
+        <input type="submit" name="nome" value="Cadastrar">
+    </form>
+
+    <form>
+        <h2>Exemplo 2</h2>
+        <textarea>"Texto Livre"</textarea>
+    </form>
+
+    <h2>Exemplo 3</h2>
+    <fieldset>
+            <legend>Formulário</legend>
+            <form>
+                Nome: <input type="text" name="nome"><br><br>
+                Sexo: <input type="radio" name="Sexo" value="M"> Masculino
+                <input type="radio" name="Sexo" value="F"> Feminino<br><br>
+                Pais: <select name="pais">
+                    <option value="">Selecione uma opção</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguai">Uruguai</option>
+                </select><br><br>
+
+                Mensagem:<br>
+                <textarea name="mensagem"></textarea><br><br>
+
+                <input type="checkbox" name="aceito" value="sim"> Assinar Newsletter?<br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+        <h2>Exemplo 4</h2>
+        <input type="search" name="q">
+        <input type="submit" name="nome" value="Clique para pesquisar">
+ </body>
+</html>

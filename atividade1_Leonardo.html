@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Página de Estudos</h1>
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="Digite seu Nome aqui">
+        <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+        <input type="submit" name="nome" value="Enviar">
+    </form>
+
+    <form>
+        <input type="button" value="Clique Aqui" onclick="msg()">
+    </form>
+
+    <script>
+        function msg() {
+            alert("Você clicou no botão!");
+        }
+    </script>
+
+    <form>
+        <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto<br>
+        Selecione sua cor preferida: <input type="color" name="favcor" value="#0000FF"><br>
+        <hr>
+        Data de Nascimento: <input type="date" name="nascimento"><br><br>
+        <input type="file" name="arquivos"><br><br><br>
+
+        <!-- Para permitir seleção de multiplos arquivos: -->
+         <input type="file" name="arquivos" multiple><br><br>
+
+         Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5"><br><br>
+
+         <input type="password" name="senha" placeholder="Digite sua Senha">
+
+         <p>Qual é a sua idade?</p>
+         <input type="radio" name="idade" value="18_22"> 18 a 22<br>
+         <input type="radio" name="idade" value="23_30"> 23 a 30<br>
+         <input type="radio" name="idade" value="mais31"> acima de 31<br>
+         <hr>
+
+         Defina seu nível de satisfação: <br>
+         Pouco satisfeito ╯︿╰
+         <input type="range" name="satisfacao" min="0" max="10">
+         Muito satisfeito ╰(*°▽°*)╯<br><br>
+    </form>
+
+    <form>
+        <label for="email">Digite seu e-mail</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="pin">Digite seu código</label>
+        <input type="text" id="pin" name="pin" maxlength="4"><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br><br>
+        <hr>
+
+        Pesquisar: <input type="search" name="q"><br><br>
+
+        Telefone: <input type="tel" name="telefone"><br><br>
+
+        Link do seu Website: <input type="url" name="website"><br><br>
+
+        <textarea></textarea>
+
+        <textarea>Area de texto com um texto inicial dentro</textarea><br><br>
+        <select name="lista" id="lista">
+            <option>Selecione uma opção</option>
+            <option>Macarrão</option>
+            <option>Pizza</option>
+            <option>Nhoque</option>
+            <option>Canelone</option>
+        </select>
+
+        <fieldset>
+            <legend>Formulário</legend>
+            <form>
+                <input type="text" name="nome" placeholder="Digite seu Nome aqui">
+            </form>
+        </fieldset>
+    </form>
+</body>
+</html>
